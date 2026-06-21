@@ -41,7 +41,7 @@ const Login = () => {
   return (
     <div className="min-h-screen bg-gray-50 flex flex-col justify-center py-12 sm:px-6 lg:px-8">
       <div className="sm:mx-auto sm:w-full sm:max-w-md">
-        <div className="bg-white py-8 px-4 shadow-[0_8px_30px_rgb(0,0,0,0.04)] sm:rounded-2xl sm:px-10 border border-gray-100">
+        <div className="bg-white py-8 px-4 shadow-[0_8px_30px_rgb(0,0,0,0.04)] sm:rounded-lg sm:px-8 border border-black/10">
           
           <div className="flex items-center mb-8 justify-center">
             <div className="mr-4">
@@ -50,7 +50,7 @@ const Login = () => {
               </svg>
             </div>
             <div>
-              <h2 className="text-2xl font-bold text-blue-600 tracking-tight">BIT Student Profile</h2>
+              <h2 className="text-[26px] font-bold text-blue-600 tracking-tight">BIT Student Profile</h2>
               <p className="text-sm font-bold text-gray-900 mt-1">Welcome back</p>
             </div>
           </div>
@@ -67,7 +67,7 @@ const Login = () => {
                   type="email"
                   autoComplete="email"
                   placeholder="Enter your email"
-                  className="appearance-none block w-full px-3 py-2 border border-gray-200 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
+                  className="appearance-none block w-full px-3 py-2.5 border border-gray-200 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
                 />
               </div>
             </div>
@@ -83,7 +83,7 @@ const Login = () => {
                   type="password"
                   autoComplete="current-password"
                   placeholder="Enter your password"
-                  className="appearance-none block w-full px-3 py-2 border border-gray-200 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
+                  className="appearance-none block w-full px-3 py-2.5 border border-gray-200 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
                 />
               </div>
             </div>
@@ -108,11 +108,13 @@ const Login = () => {
               </div>
             </div>
 
-            <div className="mt-6 flex justify-center">
+            <div className="mt-6 w-full flex justify-center">
               <GoogleLogin
                 onSuccess={handleSuccess}
                 onError={handleError}
                 shape="rectangular"
+                width="300"
+                logo_alignment="center"
               />
             </div>
           </div>
