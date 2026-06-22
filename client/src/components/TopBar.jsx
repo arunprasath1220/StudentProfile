@@ -11,7 +11,7 @@ const TopBar = ({ role }) => {
   });
 
   return (
-    <div className="h-16 bg-white border-b border-gray-200 flex items-center justify-between px-8 fixed top-0 right-0 left-56 z-10">
+    <div className="h-16 bg-white border-b border-gray-200 flex items-center justify-between px-8 fixed top-0 right-0 left-56 z-40">
       <div className="flex items-center text-sm">
         <span className="text-gray-600 capitalize">{role}</span>
         {breadcrumbs.length > 1 && (

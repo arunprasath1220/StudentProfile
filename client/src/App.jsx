@@ -10,6 +10,7 @@ import MyProfile from './pages/Student/MyProfile';
 // Admin Pages
 import AdminDashboard from './pages/Admin/Dashboard';
 import AdmissionStudents from './pages/Admin/AdmissionStudents';
+import AdmissionForm from './pages/Admin/AdmissionForm';
 import StudentProfile from './pages/Admin/StudentProfile';
 import StudentDetails from './pages/Admin/StudentDetails';
 
@@ -33,6 +34,7 @@ function App() {
         <Route index element={<Navigate to="dashboard" replace />} />
         <Route path="dashboard" element={<AdminDashboard />} />
         <Route path="admission-students" element={<AdmissionStudents />} />
+        <Route path="admission-form" element={<AdmissionForm />} />
         <Route path="student-profile" element={<StudentProfile />} />
         <Route path="student-details" element={<StudentDetails />} />
       </Route>
